@@ -1,3 +1,8 @@
+body {
+  min-width: 320px;
+  font-family: "Merriweather", serif;
+}
+
 header {
   padding-top: 51px;
   padding-bottom: 51px;
@@ -10,6 +15,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #f17036;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 26px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -60,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-link {
   display: inline-block;
   color: #ccc;
-  font-size: 21px;
+  font-size: 18px;
   text-decoration: none;
   margin-bottom: 8px;
 }
@@ -80,5 +87,5 @@ h1, h2, h3, h4, h5, h6 {
 
 #section-one {
   padding: 41px 0;
-  
+
 }
