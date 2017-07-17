@@ -1,0 +1,84 @@
+header {
+  padding-top: 51px;
+  padding-bottom: 51px;
+  border-bottom: 2px solid #f17036;
+}
+header p { margin-bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "museo-sans", sans-serif;
+  font-weight: 400;
+  color: #f17036;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .dmcwhinnie-logo { margin: 0 auto; }
+}
+
+.header-title {
+  font-family: "museo-sans", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 21px;
+}
+
+@media only screen and (min-width: 768px) and (max-width:
+  991px) {
+  .header-title {
+    font-size: 36px;
+    margin-top: 0;
+  }
+}
+
+.header-contact-info { text-align: center; }
+@media only screen and (min-width: 768px) {
+  .header-contact-info { text-align: right; }
+}
+
+.header-social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-social-icons li {
+  display: inline-block;
+  font-size: 21px;
+  margin-left: 12px;
+  margin-bottom: 8px;
+}
+.header-social-icons li a {
+  color: #ccc;
+}
+.header-social-icons li a:hover,
+.header-social-icons li a:focus { color: #f17036; }
+
+.header-link {
+  display: inline-block;
+  color: #ccc;
+  font-size: 21px;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+.header-link:hover,
+.header-link:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width:
+  991px) {
+    .header-link { font-size: 16px; }
+}
+
+.header-social-icons a:hover,
+.header-link:hover { transition: color .4s; }
+
+#section-one {
+  padding: 41px 0;
+  
+}
