@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
   text-align: center;
   text-transform: capitalize;
+  margin-top: 32px;
   margin-bottom: 21px;
 }
 
@@ -38,6 +39,14 @@ h1, h2, h3, h4, h5, h6 {
   .header-title {
     font-size: 36px;
     margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header-title {
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -85,7 +94,8 @@ h1, h2, h3, h4, h5, h6 {
 .header-social-icons a:hover,
 .header-link:hover { transition: color .4s; }
 
-#section-one {
-  padding: 41px 0;
-
+#section-one h2 { margin-top: 41px; }
+#section-one span {
+  font-weight: 700;
+  color: #002f80;
 }
