@@ -19,43 +19,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 26px;
 }
 
-@media only screen and (max-width: 768px) {
-  .dmcwhinnie-logo { margin: 0 auto; }
-}
-
-.header-title {
-  font-family: "museo-sans", sans-serif;
-  font-size: 42px;
-  font-weight: 400;
-  color: #333;
-  text-align: center;
-  text-transform: capitalize;
-  margin-top: 32px;
-  margin-bottom: 21px;
-}
-
-@media only screen and (min-width: 768px) and (max-width:
-  991px) {
-  .header-title {
-    font-size: 36px;
-    margin-top: 0;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .header-title {
-    font-size: 48px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
-.header-contact-info { text-align: center; }
-@media only screen and (min-width: 768px) {
-  .header-contact-info { text-align: right; }
-}
+.dmcwhinnie-logo { margin: 0 auto; }
 
 .header-social-icons {
+  float: right;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -73,12 +40,14 @@ h1, h2, h3, h4, h5, h6 {
 .header-social-icons li a:hover,
 .header-social-icons li a:focus { color: #f17036; }
 
+.contact-links { float: left; }
+
 .header-link {
-  display: inline-block;
+  display: block;
   color: #ccc;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
-  margin-bottom: 8px;
+  margin: 8px 0;
 }
 .header-link:hover,
 .header-link:focus {
@@ -98,4 +67,11 @@ h1, h2, h3, h4, h5, h6 {
 #section-one span {
   font-weight: 700;
   color: #002f80;
+}
+
+/* === FOOTER STYLES === */
+footer {
+  padding-top: 51px;
+  padding-bottom: 51px;
+  border-top: 2px solid #f17036;
 }
