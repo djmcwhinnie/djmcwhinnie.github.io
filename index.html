@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <title>CV | Douglas McWhinnie</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- jQuery CDN - Google -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- Font Awesome -->
@@ -30,41 +33,121 @@
 <body>
   <header>
     <div class="container">
+      <ul class="header-social-icons">
+        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+        <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+        <li><a href="#"><span class="fa fa-flickr"></span></a></li>
+      </ul>
       <div class="row">
-        <div class="col-xs-12 col-sm-4">
-          <img class="img-responsive dmcwhinnie-logo" src="assets/dmcwhinnie-logo.svg" width="307" height="113" alt="dmcwhinnie logo">
-        </div><!-- /.col -->
-        <div class="col-xs-12 col-sm-4">
-          <h1 class="header-title">Curriculum Vitae.</h1>
-        </div>
-        <div class="col-xs-12 col-sm-4 header-contact-info">
-          <ul class="header-social-icons">
-            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-            <li><a href="#"><span class="fa fa-flickr"></span></a></li>
+        <div class="col-sm-12">
+          <img class="img-responsive dmcwhinnie-logo" src="assets/dmcwhinnie-logo.svg" alt="dmcwhinnie logo">
+          <ul class="contact-links">
+            <li><a class="header-link" href="mailto:hello@dmcwhinnie.co.uk">hello@dmcwhinnie.co.uk</a></li>
+            <li><a class="header-link" href="http://dmcwhinnie.co.uk">dmcwhinnie.co.uk</a></li>
           </ul>
-          <a class="header-link" href="mailto:hello@dmcwhinnie.co.uk">hello@dmcwhinnie.co.uk //</a>
-          <a class="header-link" href="http://dmcwhinnie.co.uk">dmcwhinnie.co.uk //</a>
         </div><!-- /.col -->
       </div><!-- /.row -->
     </div><!-- /.container -->
   </header>
 
   <!-- Section One -->
-  <section id="section-one">
+  <section id="cv-intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Hello</h1>
+          <p>My name is Douglas, and I am a passionate developer and designer with a wide range of skills and experience in both fields. I’m capable of working under pressure on multiple projects, as part of a team, and have the confidence and motivation to work on my own initiative. I believe I have a friendly and outgoing personality that is easy to get along with and a good work ethic that always makes me keen to learn new skills and techniques.</p>
+          <hr>
+        </div><!-- .col -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section>
+
+  <section id="dev-xp">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12"><h2>Development List</h2></div>
+        <div class="col-sm-6">
+          <p>Below is a list sites I have developed using a variety of resources including but not limited to: WordPress, Advanced Custom Fields, Bootstrap, and the Sage starter theme.</p>
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-angle-double-right"></i><a href="#">northernferarrihire.com</a></li>
+            <li><i class="fa-li fa fa-angle-double-right"></i><a href="#">posltd.net</a></li>
+            <li><i class="fa-li fa fa-angle-double-right"></i><a href="#">dialoguescotland.com</a></li>
+            <li><i class="fa-li fa fa-angle-double-right"></i><a href="#">lindsaykirkwood.com</a></li>
+            <li><i class="fa-li fa fa-angle-double-right"></i><a href="#">yourpropertywizard.com</a></li>
+            <li><i class="fa-li fa fa-angle-double-right"></i><a href="#">envirovend.com</a></li>
+            <li><i class="fa-li fa fa-angle-double-right"></i><a href="#">gsixliving.com</a></li>
+            <li><i class="fa-li fa fa-angle-double-right"></i><a href="#">glasgowmedicalrooms.com</a></li>
+            <li><i class="fa-li fa fa-angle-double-right"></i><a href="#">atlanticfastfood.co.uk</a></li>
+            <li><i class="fa-li fa fa-angle-double-right"></i><a href="#">rdsprayservices.co.uk</a></li>
+          </ul>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <p>Below is a list sites I have edited, updated or re-developed for a clients request. This requires problem solving to understand another developers code base followed by implementing the required changes, and making sure new code does not conflict with the existing.</p>
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-angle-right"></i><a href="#">excel-vending.co.uk</a></li>
+            <li><i class="fa-li fa fa-angle-right"></i><a href="#">icon-awards.co.uk</a></li>
+            <li><i class="fa-li fa fa-angle-right"></i><a href="#">prestigehotelawards.co.uk</a></li>
+            <li><i class="fa-li fa fa-angle-right"></i><a href="#">charitychampions.co.uk</a></li>
+            <li><i class="fa-li fa fa-angle-right"></i><a href="#">keystonepreservation.co.uk</a></li>
+            <li><i class="fa-li fa fa-angle-right"></i><a href="#">murraygolf.co.uk</a></li>
+            <li><i class="fa-li fa fa-angle-right"></i><a href="#">charitychampions.co.uk</a></li>
+          </ul>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+      <hr>
+    </div><!-- /.container -->
+  </section>
+
+  <section id="cv-experience">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12"><h2>Experience</h2></div>
+        <div class="col-sm-6">
+          <p><span class="job-company">fatBuzz</span> <span class="job-date">(Aug 2017 - current)</span> - Web developer in a fast paced agency environment working with a wide variety of clients and project sizes. Development of custom WordPress sites from the ground up using the Sage starter theme based on in-house custom designs. Management and creation of hosting packages, databases, domain names, and mailboxes are part of the many day-to-day tasks as well as providing support, training, and basic SEO/Google Analytics foundations.</p>
+          <p><span class="job-company">fatBuzz</span> <span class="job-date">(Feb 2016 - Aug 2017)</span> - Junior web developer working with a wide variety of clients and project sizes, developing custom WordPress sites and updating or managing existing client sites.</p>
+          <p><span class="job-company">Freelance Work</span> <span class="job-date">(current)</span> - Working on a wide range of content including digital and printed products. Varying between logos, branding, social media artwork, wedding invites and business stationery.</p>
+          <p><span class="job-company">Creative Concept Ltd</span> <span class="job-date">(Sept 13 - Dec 14)</span> - Responsible for many tasks including the design and printing of innovative and eye-catching artwork for a diverse range of clients while working within Printing.com branding guidelines. Working at a fast pace on multiple jobs while maintaining a high standard of quality.</p>
+        </div>
+        <div class="col-sm-6">
+          <p><span class="job-company">Glasgow PDC</span> <span class="job-date">(July 13 - Sept 13)</span> - Part of a design team creating and printing artwork for a range of customers as well as updating existing files for repeat work. Handled customer enquiries on the shop front, explaining all possible solutions available for each product or job, providing quotes as required.</p>
+          <p><span class="job-company">Minuteman Press</span> <span class="job-date">(Mar 08 - July 13)</span> - Being the only qualified designer in the shop, I was responsible for producing all of the artwork for clients and this helped me build my confidence in talking to clients about their design needs. My responsibilities also included the management of all digital printing as well as plate output for in-house litho prinintg.</p>
+          <p><span class="job-company">Belong Jewellery</span> <span class="job-date">(Jun 07 - Sept 07)</span> - A three month Web Developer contract on a new e-commerce site build. I was responsible for taking photographs of jewellery, editing those images and populating the site at which times I would liase with the outside developers on bugs, layout and usability issues.</p>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+      <hr>
+    </div><!-- /.container -->
+  </section>
+
+  <section id="section-two">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Skill Sets</h2>
+          <p>Proficient on Mac and PC, I am highly skilled in many Adobe Creative Cloud programmes (Indesign, Illustrator, and Photoshop). Fluent with HTML5 and CSS3/SASS as well as JavaScript, PHP, My SQL/databases, JQuery, various boilerplates (Bootstrap, Foundation, Skeleton), and CMS systems (WordPress, Joomla!). I am familiar with on-page SEO as well as utilising popular social media networks.</p>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+      <hr>
+    </div><!-- /.container -->
+  </section>
+
+  <footer>
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <h2>Hello.</h2>
+          <p><span class="fa fa-code"></span> by <a href="mailto:info@dmcwhinnie.co.uk"><i class="fa fa-user-circle-o"></i> Douglas McWhinnie</a> funnily enough, hosted through <a href="https://pages.github.com/"><i class="fa fa-github"></i> GitHub Pages</a>.</p>
         </div>
         <div class="col-sm-6">
-
+          <ul class="footer-social-icons">
+            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#"><span class="fa fa-flickr"></span></a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
-
-  <footer></footer>
+  </footer>
 </body>
 </html>

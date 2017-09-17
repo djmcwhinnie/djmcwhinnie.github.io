@@ -1,7 +1,18 @@
+body {
+  min-width: 320px;
+  font-family: "Merriweather", serif;
+}
+
+hr { margin: 54px 0; }
+
 header {
-  padding-top: 51px;
+  padding-top: 34px;
   padding-bottom: 51px;
   border-bottom: 2px solid #f17036;
+  margin-bottom: 54px;
+}
+@media only screen and (min-width: 768px) {
+  padding-top: 0;
 }
 header p { margin-bottom: 0; }
 
@@ -10,43 +21,25 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #f17036;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
-@media only screen and (max-width: 768px) {
-  .dmcwhinnie-logo { margin: 0 auto; }
-}
-
-.header-title {
-  font-family: "museo-sans", sans-serif;
-  font-size: 42px;
-  font-weight: 400;
-  color: #333;
-  text-align: center;
-  text-transform: capitalize;
-  margin-bottom: 21px;
-}
-
-@media only screen and (min-width: 768px) and (max-width:
-  991px) {
-  .header-title {
-    font-size: 36px;
-    margin-top: 0;
-  }
-}
-
-.header-contact-info { text-align: center; }
-@media only screen and (min-width: 768px) {
-  .header-contact-info { text-align: right; }
+.dmcwhinnie-logo {
+  width: 407px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .header-social-icons {
+  float: right;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .header-social-icons li {
-  display: inline-block;
+  display: inline;
   font-size: 21px;
   margin-left: 12px;
   margin-bottom: 8px;
@@ -57,12 +50,24 @@ h1, h2, h3, h4, h5, h6 {
 .header-social-icons li a:hover,
 .header-social-icons li a:focus { color: #f17036; }
 
-.header-link {
+.contact-links {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+  text-align: center;
+}
+.contact-links li {
   display: inline-block;
+}
+.contact-links li + li:before {
+  content: "/";
+  margin: 0 16px;
+}
+
+.header-link {
   color: #ccc;
-  font-size: 21px;
+  font-size: 16px;
   text-decoration: none;
-  margin-bottom: 8px;
 }
 .header-link:hover,
 .header-link:focus {
@@ -78,7 +83,64 @@ h1, h2, h3, h4, h5, h6 {
 .header-social-icons a:hover,
 .header-link:hover { transition: color .4s; }
 
-#section-one {
-  padding: 41px 0;
-  
+#cv-intro p {
+  font-size: 21px;
+  text-align: justify;
 }
+#cv-intro h2 { margin-bottom: 42px; }
+
+#cv-experience h2 { margin-bottom: 42px; }
+#cv-experience span.job-company {
+  font-family: "museo-sans", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #f17036;
+}
+#cv-experience span.job-date {
+  font-family: "museo-sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ccc;
+}
+#cv-experience p { text-align: justify; }
+
+
+
+/* === FOOTER STYLES === */
+footer {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  border-top: 2px solid #f17036;
+}
+footer span.fa { font-size: 18px; }
+footer i.fa { font-size: 18px; }
+footer a {
+  color: #333;
+  transition: color .4s;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #f17036;
+  text-decoration: none;
+}
+
+.footer-social-icons {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-icons li {
+  display: inline;
+  font-size: 21px;
+  margin-left: 12px;
+  margin-bottom: 8px;
+  line-height: 0;
+}
+.footer-social-icons li a {
+  color: #333;
+}
+.footer-social-icons li a:hover,
+.footer-social-icons li a:focus { color: #f17036; }
