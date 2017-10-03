@@ -32,10 +32,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-social-icons {
-  float: right;
+  float: none;
+  text-align: center;
   list-style: none;
-  margin: 0;
+  margin-bottom: 18px;
   padding: 0;
+}
+@media only screen and (min-width: 992px) {
+  .header-social-icons {
+    float: right;
+    margin-bottom: 0;
+  }
 }
 
 .header-social-icons li {
@@ -50,6 +57,8 @@ h1, h2, h3, h4, h5, h6 {
 .header-social-icons li a:hover,
 .header-social-icons li a:focus { color: #f17036; }
 
+.header-social-icons li:first-of-type { margin-left: 0; }
+
 .contact-links {
   list-style: none;
   margin: 16px 0;
@@ -58,10 +67,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .contact-links li {
   display: inline-block;
+  margin-bottom: 12px;
 }
-.contact-links li + li:before {
-  content: "/";
-  margin: 0 16px;
+.contact-links li:last-of-type { margin-bottom: 0; }
+
+@media only screen and (min-width: 768px) {
+  .contact-links li { margin-bottom: 0; }
+  .contact-links li + li:before {
+    content: "/";
+    margin: 0 16px;
+  }
 }
 
 .header-link {
@@ -84,8 +99,14 @@ h1, h2, h3, h4, h5, h6 {
 .header-link:hover { transition: color .4s; }
 
 #cv-intro p {
-  font-size: 21px;
-  text-align: justify;
+  font-size: 18px;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  #cv-intro p {
+    font-size: 21px;
+    text-align: justify;
+  }
 }
 #cv-intro h2 { margin-bottom: 42px; }
 
@@ -102,8 +123,48 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #ccc;
 }
+@media only screen and (min-width: 768px) {
 #cv-experience p { text-align: justify; }
+}
 
+#design-xp { margin-bottom: 54px; }
+
+.skill-icons {
+  margin-top: 54px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.skill-icons li {
+  display: inline-block;
+  margin-bottom: 18px;
+  margin-left: 21px;
+}
+.skill-icons li a { display: inline-block; }
+@media only screen and (min-width: 768px) {
+  .skill-icons li { margin-bottom: 0; }
+}
+.skill-icons li:first-of-type { margin-left: 0; }
+.skill-icons li img {
+  height: 38px;
+  width: auto;
+}
+
+.carousel { height: 450px; }
+
+.carousel-inner {
+  height: 450px;
+  border: 3px solid #ccc;
+}
+.carousel-inner > .item {
+  height: 450px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel-control.left { background-image: none; }
+.carousel-control.right { background-image: none; }
 
 
 /* === FOOTER STYLES === */
