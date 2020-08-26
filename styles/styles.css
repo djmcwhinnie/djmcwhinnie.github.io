@@ -1,207 +1,225 @@
+:root {
+  --brand-orange: #f17036;
+  --brand-purple: #781C5C;
+  --brand-charcoal: #36454f;
+  --brand-black: #333333;
+  --brand-grey: #707070;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   min-width: 320px;
-  font-family: "Merriweather", serif;
+  font-family: 'Lora', serif;
+  font-size: 1.6rem;
+  line-height: 1.5em;
 }
 
-hr { margin: 54px 0; }
+a {
+  font-family: "museo-sans", sans-serif;
+  color: var(--brand-orange);
+  text-decoration: none;
+}
 
-header {
-  padding-top: 34px;
-  padding-bottom: 51px;
-  border-bottom: 2px solid #f17036;
-  margin-bottom: 54px;
+a:hover {
+  color: var(--brand-purple);
+  text-decoration: none;
 }
-@media only screen and (min-width: 768px) {
-  padding-top: 0;
+
+a:active,
+a:focus {
+  color: var(--brand-purple);
 }
-header p { margin-bottom: 0; }
+
+.highlight {
+  font-size: 1.8rem;
+  font-style: italic;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "museo-sans", sans-serif;
   font-weight: 400;
-  color: #f17036;
+  color: var(--brand-orange);
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 32px;
 }
 
-.dmcwhinnie-logo {
-  width: 407px;
-  height: auto;
+header {
+  width: 50vw;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 0;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--brand-black);
+}
+
+.section-title__icon {
+  margin-right: 0.5em;
+}
+
+@media only print {
+  .section-title__icon {
+    margin-right: 0;
+    display: none;
+  }
+}
+
+.header__logo {
+  margin-bottom: 54px;
+}
+
+.header__social-icons {
+  width: 50%;
+  min-width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0;
+}
+
+.header__social-icons__icon {
+  list-style: none;
+  font-size: 3.2rem;
+}
+
+.header__social-icons__icon a {
+  color: var(--brand-grey);
+}
+
+.header__social-icons__icon a:hover,
+.header__social-icons__icon a:active {
+  color: var(--brand-orange);
+}
+
+.header__social-icons__icon a:focus {
+  color: var(--brand-purple);
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(320px, 50%);
+  justify-content: center;
+}
+
+section {
+  padding: 2em 0;
+  margin-bottom: 2em;
+  border-bottom: 1px solid var(--brand-grey);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+/* ===  Development Styles === */
+.development__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 2fr));
+  grid-template-rows: auto;
+  column-gap: 2em;
+}
+
+/* === Employment Cards  === */
+.employment__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 2fr));
+  grid-template-rows: auto;
+  column-gap: 2em;
+  row-gap: 2em;
+  padding: 2em 0;
+}
+
+.employment__card {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: var(--brand-charcoal);
+  border: 2px solid white;
+  padding: 1em;
+  box-shadow: 3px 0 8px 6px rgba(0, 0, 0, 0.4);
+}
+
+.employment__card__title {
+  color: var(--brand-orange);
+  text-transform: uppercase;
+}
+
+.employment__card p {
+  margin-top: 0;
+}
+
+.employment__card span {
+  margin-top: auto;
+  margin-left: auto;
+  color: var(--brand-orange);
+  font-family: "museo-sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+/* === Skill Set Icons  === */
+.skills__container {
+  width: 90%;
+  padding-top: 2em;
   margin: 0 auto;
 }
 
-.header-social-icons {
-  float: none;
-  text-align: center;
-  list-style: none;
-  margin-bottom: 18px;
-  padding: 0;
-}
-@media only screen and (min-width: 992px) {
-  .header-social-icons {
-    float: right;
-    margin-bottom: 0;
+@media only screen and (min-width: 768px) {
+  .skills__container {
+    width: 60%;
   }
 }
 
-.header-social-icons li {
-  display: inline;
-  font-size: 21px;
-  margin-left: 12px;
-  margin-bottom: 8px;
-}
-.header-social-icons li a {
-  color: #ccc;
-}
-.header-social-icons li a:hover,
-.header-social-icons li a:focus { color: #f17036; }
-
-.header-social-icons li:first-of-type { margin-left: 0; }
-
-.contact-links {
-  list-style: none;
-  margin: 16px 0;
-  padding: 0;
-  text-align: center;
-}
-.contact-links li {
-  display: inline-block;
-  margin-bottom: 12px;
-}
-.contact-links li:last-of-type { margin-bottom: 0; }
-
-@media only screen and (min-width: 768px) {
-  .contact-links li { margin-bottom: 0; }
-  .contact-links li + li:before {
-    content: "/";
-    margin: 0 16px;
-  }
-}
-
-.header-link {
-  color: #ccc;
-  font-size: 16px;
-  text-decoration: none;
-}
-.header-link:hover,
-.header-link:focus {
-  color: #333;
-  text-decoration: none;
-}
-
-@media only screen and (min-width: 768px) and (max-width:
-  991px) {
-    .header-link { font-size: 16px; }
-}
-
-.header-social-icons a:hover,
-.header-link:hover { transition: color .4s; }
-
-#cv-intro p {
-  font-size: 18px;
-  text-align: left;
-}
-@media only screen and (min-width: 768px) {
-  #cv-intro p {
-    font-size: 21px;
-    text-align: justify;
-  }
-}
-#cv-intro h2 { margin-bottom: 42px; }
-
-#cv-experience h2 { margin-bottom: 42px; }
-#cv-experience span.job-company {
-  font-family: "museo-sans", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #f17036;
-}
-#cv-experience span.job-date {
-  font-family: "museo-sans", sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #ccc;
-}
-@media only screen and (min-width: 768px) {
-#cv-experience p { text-align: justify; }
-}
-
-#design-xp { margin-bottom: 54px; }
-
-.skill-icons {
-  margin-top: 54px;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-.skill-icons li {
-  display: inline-block;
-  margin-bottom: 18px;
-  margin-left: 21px;
-}
-.skill-icons li a { display: inline-block; }
-@media only screen and (min-width: 768px) {
-  .skill-icons li { margin-bottom: 0; }
-}
-.skill-icons li:first-of-type { margin-left: 0; }
-.skill-icons li img {
-  height: 38px;
-  width: auto;
-}
-
-.carousel { height: 450px; }
-
-.carousel-inner {
-  height: 450px;
-  border: 3px solid #ccc;
-}
-.carousel-inner > .item {
-  height: 450px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.carousel-control.left { background-image: none; }
-.carousel-control.right { background-image: none; }
-
-
-/* === FOOTER STYLES === */
-footer {
-  padding-top: 54px;
-  padding-bottom: 54px;
-  border-top: 2px solid #f17036;
-}
-footer span.fa { font-size: 18px; }
-footer i.fa { font-size: 18px; }
-footer a {
-  color: #333;
-  transition: color .4s;
-}
-
-footer a:hover,
-footer a:focus {
-  color: #f17036;
-  text-decoration: none;
-}
-
-.footer-social-icons {
-  float: right;
-  list-style: none;
+.skills__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
-.footer-social-icons li {
-  display: inline;
-  font-size: 21px;
-  margin-left: 12px;
-  margin-bottom: 8px;
-  line-height: 0;
+.skills__icons__icon {
+  list-style: none;
+  margin-bottom: 1em;
 }
-.footer-social-icons li a {
-  color: #333;
+
+.skills__icons__icon img {
+  width: auto;
+  height: 50px;
 }
-.footer-social-icons li a:hover,
-.footer-social-icons li a:focus { color: #f17036; }
+
+/* === Carousel Styles  === */
+.design__container,
+.hobbies__container {
+  padding: 3em 0;
+}
+
+.design__carousel__item,
+.hobbies__carousel__item {
+  width: 100%;
+  height: 400px;
+}
+
+.design__carousel__item img,
+.hobbies__carousel__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* === Footer Styles === */
+footer {
+  width: 50vw;
+  min-width: 320px;
+  display: flex;
+  place-content: center;
+  padding: 2em 0;
+  border-top: 2px solid var(--brand-orange);
+  margin: 0 auto;
+}

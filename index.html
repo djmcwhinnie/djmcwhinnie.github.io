@@ -6,16 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <title>CV | Douglas McWhinnie</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- jQuery CDN - Google -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- Font Awesome -->
-  <script src="https://use.fontawesome.com/a8ab279ebb.js"></script>
-  <!-- Custom Scripts -->
-  <script src="scripts/scripts.js"></script>
+  <!-- Font Awesome 5 -->
+  <script src="https://kit.fontawesome.com/5229f38a0a.js" crossorigin="anonymous"></script>
   <!-- Typekit Font -->
   <script>
   (function(d) {
@@ -28,186 +20,228 @@
     })(document);
   </script>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
-  <!-- Custom Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/flickity.min.css">
   <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 <body>
-  <header>
-    <div class="container">
-      <ul class="header-social-icons">
-        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-        <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-        <li><a href="#"><span class="fa fa-flickr"></span></a></li>
-      </ul>
-      <div class="row">
-        <div class="col-sm-12">
-          <img class="img-responsive dmcwhinnie-logo" src="assets/dmcwhinnie-logo.svg" alt="dmcwhinnie logo">
-          <ul class="contact-links">
-            <li><a class="header-link" href="mailto:hello@dmcwhinnie.co.uk">hello@dmcwhinnie.co.uk</a></li>
-            <li><a class="header-link" href="http://dmcwhinnie.co.uk">dmcwhinnie.co.uk</a></li>
-          </ul>
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-    </div><!-- /.container -->
+  <header class="header">
+    <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" width="305" height="80">
+      <title>site logo</title>
+      <defs>
+        <style>
+          .cls-1{fill:#36454f}.cls-2{fill:#f3702a}
+        </style>
+      </defs>
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+          <path class="cls-1" d="M32.28 32.13A8.34 8.34 0 0140 36.58h.09A17.68 17.68 0 0140 34.8V23.31h3.18v33h-3.12v-2.53a16 16 0 01.09-1.69h-.09A8.49 8.49 0 0132 56.83c-6.14 0-10.31-5.07-10.31-12.38s4.4-12.32 10.59-12.32zM32.42 54c3.94 0 7.64-2.81 7.64-9.52 0-4.78-2.44-9.47-7.5-9.47C28.39 35 25 38.5 25 44.45S28 54 32.42 54zM50.85 32.69H54v3.51a16.79 16.79 0 01-.1 1.88h.1a9.62 9.62 0 018.53-5.95c4.35 0 6.61 2 7.31 5.9h.09a9.58 9.58 0 018.67-5.9c5.72 0 7.83 3.32 7.83 9.14v15h-3.2V42.06c0-3.84-.79-7-5.11-7-3.61 0-6.56 3.19-7.45 6.66a11 11 0 00-.42 3.42v11.12h-3.19v-14.2c0-3.56-.51-7-5-7-3.84 0-6.74 3.33-7.73 6.94a13.53 13.53 0 00-.33 3.11v11.15h-3.15zM104.52 32.13a11.6 11.6 0 018.62 3.37l-1.64 2.39a10 10 0 00-6.89-2.89c-5.15 0-9.18 3.85-9.18 9.47a9.13 9.13 0 008.74 9.53h.54a10.33 10.33 0 007.54-3.33l1.46 2.48a12.61 12.61 0 01-9.19 3.71 12 12 0 01-12.37-11.62v-.74a12 12 0 0111.62-12.37q.38-.02.75 0zM116.48 32.69h3.37l5.72 17.57c.37 1.13.7 2.54.7 2.54h.1s.32-1.41.7-2.54l5.81-17.48H136l5.81 17.48c.38 1.13.71 2.54.71 2.54h.09s.33-1.36.7-2.54L149 32.69h3.38l-8 23.57H141l-5.77-16.78c-.42-1.17-.75-2.53-.75-2.53h-.09s-.33 1.36-.7 2.53l-5.77 16.78h-3.47z"/>
+          <path class="cls-2" d="M156.79 23.17h4.55v12.14a19 19 0 01-.1 2h.1A9.55 9.55 0 01170.1 32c5.58 0 8.16 3 8.16 9.09v15.17h-4.55V42.11c0-3.33-.7-6-4.5-6a7.85 7.85 0 00-7.5 5.86 11.07 11.07 0 00-.37 3.14v11.1h-4.55zM185 23.17h4.6v4.64H185zm.05 9.38h4.55v23.71h-4.55z"/>
+          <path class="cls-1" d="M197 32.69h3.14v3.51c0 1-.09 1.88-.09 1.88h.09a10 10 0 019.42-5.95c5.82 0 7.88 3.32 7.88 9.14v15h-3.19V42.11c0-3.7-.56-7-5.11-7a8.94 8.94 0 00-8.57 6.65 11.44 11.44 0 00-.37 3.24v11.26H197zM224.81 32.69H228v3.51c0 1-.09 1.88-.09 1.88h.09a10 10 0 019.42-5.95c5.82 0 7.88 3.32 7.88 9.14v15h-3.19V42.11c0-3.7-.56-7-5.11-7a9 9 0 00-8.58 6.65A11.86 11.86 0 00228 45v11.26h-3.19zM252.52 23.31h3.32v4h-3.32zm.09 9.38h3.19v23.57h-3.19zM273.47 32.13c6.52 0 9.84 5 9.84 10.87 0 .56-.09 1.64-.09 1.64h-18.09c.14 6 4.26 9.33 9.14 9.33a11 11 0 007.17-2.86l1.45 2.44a13.51 13.51 0 01-8.72 3.28 11.92 11.92 0 01-12.32-11.51v-.82c0-7.73 5.25-12.37 11.62-12.37zm6.61 9.87c-.19-4.93-3.19-7.22-6.7-7.22-3.94 0-7.36 2.48-8.11 7.22z"/>
+          <path class="cls-1" d="M302 3v74H3V3h299m3-3H0v80h305V0z"/>
+          <path d="M296.5 8.5v63H8.5v-63h288m1-1H7.5v65h290v-65z" fill="#d3d3d3"/>
+        </g>
+      </g>
+    </svg>
+
+    <ul class="header__social-icons">
+      <li class="header__social-icons__icon"><a href="https://www.instagram.com/dmcwhinnie/" target="_blank"><span class="fab fa-instagram"></span></a></li>
+      <li class="header__social-icons__icon"><a href="https://www.linkedin.com/in/douglas-mcwhinnie-32286434/" target="_blank"><span class="fab fa-linkedin"></span></a></li>
+      <li class="header__social-icons__icon"><a href="https://twitter.com/djmcwhinnie" target="_blank"><span class="fab fa-twitter"></span></a></li>
+      <li class="header__social-icons__icon"><a href="https://www.flickr.com/photos/dmcwhinnie/" target="_blank"><span class="fab fa-flickr"></span></a></li>
+      <li class="header__social-icons__icon"><a href="https://github.com/djmcwhinnie" target="_blank"><span class="fab fa-github"></span></a></li>
+      <li class="header__social-icons__icon"><a href="https://dmcwhinnie.co.uk" target="_blank"><span class="fas fa-globe-europe"></span></a></li>
+      <li class="header__social-icons__icon"><a href="mailto:hello@dmcwhinnie.co.uk" target="_blank"><span class="far fa-envelope"></span></a></li>
+      <li class="header__social-icons__icon"><a href="https://www.behance.net/douglasmcwhinn" target="_blank"><span class="fab fa-behance-square"></span></a></li>
+    </ul>
   </header>
+  <main>
+    <!-- Introduction -->
+    <section>
+      <h1 class="section-title"><span class="section-title__icon">👋</span>Hello!</h1>
+      <p class="highlight">Let's start off with a little introduction. I'm Douglas, and a front-end web developer near Glasgow, Scotland.</p>
+      <p>I've been working in the industry full-time for over 3 years since graduating with a Masters in Mobile Web Development, but also have an origin story in graphic design, which included several years experience working in studios designing for print and digital media.</p>
+      <p>There is so much to learn and do with development and as digital technology continues to touch more of our lives I get excited by all the elements out there for me to learn and work with.</p>
+      <p>Coming from a more design background, areas like UX and UI really intrigue me as it seems like a great way to bridge my two experiences together - development and design. It also gets you to look at things in a different light as well which can be really interesting and helpful.</p>
+      <p>Below you can see a simple digital Curriculum Vitae outline of my experience and skillsets or if you prefer, you can find some links above to all the other corners of the internet I have a profile or some content if you would like to get in touch.</p>
+    </section>
 
-  <!-- Section One -->
-  <section id="cv-intro">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1>Hello</h1>
-          <p>My name is Douglas, and I am a passionate developer and designer with a wide range of skills and experience in both fields. I’m capable of working under pressure on multiple projects, as part of a team, and have the confidence and motivation to work on my own initiative. I believe I have a friendly and outgoing personality that is easy to get along with and a good work ethic that always makes me keen to learn new skills and techniques.</p>
-          <hr>
-        </div><!-- .col -->
-      </div><!-- /.row -->
-    </div><!-- /.container -->
-  </section>
-
-  <section id="dev-xp">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12"><h2>Development List</h2></div>
-        <div class="col-sm-6">
-          <p>Below is a list of sites I have developed using a variety of resources including but not limited to: WordPress, Advanced Custom Fields, Bootstrap, and the Sage starter theme.</p>
+    <!-- Development List -->
+    <section class="development">
+      <h2 class="section-title"><span class="section-title__icon">🖥</span>Development List</h2>
+      <p class="highlight">Below you can see a curated list of some sites that I have developed or worked on while working with a company or agency. Some of these sites I've also had design input during development to aid in the responsive behaviour or apperance.</p>
+      <div class="development__container">
+        <div class="development__container__developed">
+          <p>Sites below I have developed using a variety of resources including but not limited to: WordPress, Advanced Custom Fields, Bootstrap, E-Commerce and the Sage Roots starter theme.</p>
           <ul class="fa-ul">
-            <li><i class="fa-li fa fa-angle-double-right"></i><a href="http://resources.trifocal.eu.com/" target="_blank">resources.trifocal.eu.com</a></li>
-            <li><i class="fa-li fa fa-angle-double-right"></i><a href="https://www.mcgowansjewellers.com" target="_blank">mcgowansjewellers.com</a></li>
-            <li><i class="fa-li fa fa-angle-double-right"></i><a href="http://posltd.net" target="_blank">posltd.net</a></li>
-            <li><i class="fa-li fa fa-angle-double-right"></i><a href="http://dialoguescotland.com" target="_blank">dialoguescotland.com</a></li>
-            <li><i class="fa-li fa fa-angle-double-right"></i><a href="http://lindsaykirkwood.com" target="_blank">lindsaykirkwood.com</a></li>
-            <li><i class="fa-li fa fa-angle-double-right"></i><a href="http://yourpropertywizard.com" target="_blank">yourpropertywizard.com</a></li>
-            <li><i class="fa-li fa fa-angle-double-right"></i><a href="http://envirovend.com" target="_blank">envirovend.com</a></li>
-            <li><i class="fa-li fa fa-angle-double-right"></i><a href="http://atlanticfastfood.co.uk" target="_blank">atlanticfastfood.co.uk</a></li>
+            <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span><a href="http://resources.trifocal.eu.com/" target="_blank">resources.trifocal.eu.com</a></li>
+            <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span><a href="https://www.mcgowansjewellers.com" target="_blank">mcgowansjewellers.com</a></li>
+            <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span><a href="http://posltd.net" target="_blank">posltd.net</a></li>
+            <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span><a href="http://dialoguescotland.com" target="_blank">dialoguescotland.com</a></li>
+            <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span><a href="http://lindsaykirkwood.com" target="_blank">lindsaykirkwood.com</a></li>
           </ul>
-        </div><!-- /.col -->
-        <div class="col-sm-6">
-          <p>Below is a list of sites I have edited, updated or re-developed for a clients request. This requires problem solving to understand another developer's code base, implementing the required changes, and making sure new code does not conflict with the existing.</p>
+        </div>
+        <div class="development__container__edited">
+          <p>Sites below I have edited, updated or re-developed. Involved working alongside other developers in some cases and problem solving to understand another developer or legacy code-base - implementing required changes and making sure new code did not conflict.</p>
           <ul class="fa-ul">
-            <li><i class="fa-li fa fa-angle-right"></i><a href="https://www.shawbrook.co.uk" target="_blank">shawbrook.co.uk</a></li>
-            <li><i class="fa-li fa fa-angle-right"></i><a href="https://www.greenekinginns.co.uk" target="_blank">greenekinginns.co.uk</a></li>
-            <li><i class="fa-li fa fa-angle-right"></i><a href="http://excel-vending.co.uk" target="_blank">excel-vending.co.uk</a></li>
-            <li><i class="fa-li fa fa-angle-right"></i><a href="http://icon-awards.co.uk" target="_blank">icon-awards.co.uk</a></li>
-            <li><i class="fa-li fa fa-angle-right"></i><a href="http://prestigehotelawards.co.uk" target="_blank">prestigehotelawards.co.uk</a></li>
-            <li><i class="fa-li fa fa-angle-right"></i><a href="http://charitychampions.co.uk" target="_blank">charitychampions.co.uk</a></li>
-            <li><i class="fa-li fa fa-angle-right"></i><a href="http://keystonepreservation.co.uk" target="_blank">keystonepreservation.co.uk</a></li>
-          </ul>
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-      <hr>
-    </div><!-- /.container -->
-  </section>
-
-  <section id="cv-experience">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12"><h2>Experience</h2></div>
-        <div class="col-sm-6">
-          <p><span class="job-company">Equator</span> <span class="job-date">(May 2019 - current)</span> - Interface developer working with a wide variety of clients and project sizes. Working in a busy agile environment with other departments (design, client services, insights) developing bespoke front end solutions for Umbraco, WordPress and Drupal solutions.</p>
-          <p><span class="job-company">Equator</span> <span class="job-date">(May 2018 - May 2019)</span> - Junior interface developer working with a wide variety of clients and project sizes, developing bespoke front end solutions for Umbraco, WordPress and Drupal as well as updating existing client sites.</p>
-          <p><span class="job-company">fatBuzz</span> <span class="job-date">(Aug 2017 - May 2018)</span> - Web developer in a fast paced agency environment working with a wide variety of clients and project sizes. Development of custom WordPress sites from the ground up using the Sage starter theme based on in-house custom designs. Management and creation of hosting packages, databases, domain names, and mailboxes are part of the many day-to-day tasks, as well as providing support, training, and basic SEO/Google Analytics foundations.</p>
-          <p><span class="job-company">fatBuzz</span> <span class="job-date">(Feb 2016 - Aug 2017)</span> - Junior web developer working with a wide variety of clients and project sizes, developing custom WordPress sites and updating or managing existing client sites.</p>
-          <p><span class="job-company">Freelance Work</span> <span class="job-date">(current)</span> - Working on a wide range of content including digital and printed products. Varying between logos, branding, social media artwork, wedding invites and business stationery.</p>
-        </div>
-        <div class="col-sm-6">
-          <p><span class="job-company">Creative Concept Ltd</span> <span class="job-date">(Sept 13 - Dec 14)</span> - Responsible for many tasks including the design and printing of innovative and eye-catching artwork for a diverse range of clients while working within Printing.com branding guidelines. Working at a fast pace on multiple jobs while maintaining a high standard of quality.</p>
-          <p><span class="job-company">Glasgow PDC</span> <span class="job-date">(July 13 - Sept 13)</span> - Part of a design team creating and printing artwork for a range of customers as well as updating existing files for repeat work. Handled customer enquiries on the shop front, explaining all possible solutions available for each product or job, providing quotes as required.</p>
-          <p><span class="job-company">Minuteman Press</span> <span class="job-date">(Mar 08 - July 13)</span> - Being the only qualified designer in the shop, I was responsible for producing all of the artwork for clients and this helped me build my confidence in talking to clients about their design needs. My responsibilities also included the management of all digital printing as well as plate output for in-house litho prinintg.</p>
-          <p><span class="job-company">Belong Jewellery</span> <span class="job-date">(Jun 07 - Sept 07)</span> - A three month Web Developer contract on a new e-commerce site build. I was responsible for taking photographs of jewellery, editing those images and populating the site at which times I would liase with the outside developers on bugs, layout and usability issues.</p>
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-      <hr>
-    </div><!-- /.container -->
-  </section>
-
-  <section id="skill-sets">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h2>Skill Sets</h2>
-          <p>Proficient on Mac and PC, I am highly skilled in many Adobe Creative Cloud programmes (Indesign, Illustrator, and Photoshop). Fluent with HTML5 and CSS3/SASS, as well as JavaScript, PHP, My SQL/databases, JQuery, various boilerplates (Bootstrap, Foundation, Skeleton), and CMS systems (WordPress, Joomla!). I am familiar with on-page SEO and utilising popular social media networks.</p>
-
-          <ul class="skill-icons">
-            <li><a href="http://www.adobe.com/uk/creativecloud.html" target="_blank"><img class="img-responsive" src="assets/creative-cloud-cc.svg" alt="Adobe Creative Cloud Logo"></a></li>
-            <li><a href="http://www.adobe.com/uk/products/photoshop.html" target="_blank"><img class="img-responsive" src="assets/photoshop.svg" alt="Custom Adobe Photoshop Logo"></a></li>
-            <li><a href="http://www.adobe.com/uk/products/illustrator.html" target="_blank"><img class="img-responsive" src="assets/illustrator.svg" alt="Custom Adobe Photoshop Logo"></a></li>
-            <li><a href="http://www.adobe.com/uk/products/indesign.html" target="_blank"><img class="img-responsive" src="assets/indesign.svg" alt="Custom Adobe Photoshop Logo"></a></li>
-            <li><a href="http://getbootstrap.com/" target="_blank"><img class="img-responsive" src="assets/Bootstrap_logo.svg" alt="Bootstrap Framework Logo"></a></li>
-            <li><a href="http://php.net/" target="_blank"><img class="img-responsive" src="assets/php.svg" alt="Custom PHP Icon"></li></a>
-            <li><a href="https://en-gb.wordpress.org/" target="_blank"><img class="img-responsive" src="assets/WordPress_logo.svg" alt="WordPress Logo"></a></li>
-            <li><a href="https://roots.io/sage/" target="_blank"><img class="img-responsive" src="assets/sage.svg" alt="Roots Sage WordPress Theme Logo"></a></li>
-          </ul>
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-      <hr>
-    </div><!-- /.container -->
-  </section>
-
-  <section id="design-xp">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12"><h2>Design</h2></div>
-        <div class="col-sm-6">
-          <p>Before going back to university to complete my masters in mobile web development, I worked as a graphic designer for over 7 years in a range of print studios where I designed for both digital printing and litho.</p>
-          <p>Design work covered a wide range of products including but not limited to: stationery, promotional leaflets, branding and logo design, wedding stationery, large format banners and posters, booklets, and tickets/vouchers.</p>
-          <p>In many of my roles I was also responsible for manageing the in-house printing and outsourcing of print runs. Not only did this develop my understanding of a variety of printing standards but it also allowed me to curate relationships with outside companies.</p>
-          <p>Alongside the design and printing I also finished many items, which included cutting, trimming, foiling, and numbering. Each aspect allowing for a better collective understanding of the entire print/design process from talking through the initial brief with clients to delivering the finished product.</p>
-          <p>The carousel displays a small sample of my design examples ranging from print to branding and web.</p>
-
-        </div><!-- /.col -->
-        <div class="col-sm-6">
-          <div id="xp-wrk-carousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active" style="background-image: url('assets/Parkhouse-Garage.jpg');"></div>
-              <div class="item" style="background-image: url('assets/Parkhouse-Garage-2.jpeg');"></div>
-              <div class="item" style="background-image: url('assets/creating-connections-logo.jpg');"></div>
-              <div class="item" style="background-image: url('assets/Cafe-Padella-MockUp.jpg');"></div>
-              <div class="item" style="background-image: url('assets/logo-img.jpg');"></div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#xp-wrk-carousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#xp-wrk-carousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div><!-- /.carousel -->
-        </div>
-      </div><!-- /.row -->
-    </div><!-- /.container -->
-  </section>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <p><span class="fa fa-code"></span> by <a href="mailto:info@dmcwhinnie.co.uk"><i class="fa fa-user-circle-o"></i> Douglas McWhinnie</a> funnily enough, hosted through <a href="https://pages.github.com/"><i class="fa fa-github"></i> GitHub Pages</a>.</p>
-        </div>
-        <div class="col-sm-6">
-          <ul class="footer-social-icons">
-            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-            <li><a href="#"><span class="fa fa-flickr"></span></a></li>
+            <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span><a href="https://www.shawbrook.co.uk" target="_blank">shawbrook.co.uk</a></li>
+            <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span><a href="https://www.greenekinginns.co.uk" target="_blank">greenekinginns.co.uk</a></li>
+            <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span><a href="http://excel-vending.co.uk" target="_blank">excel-vending.co.uk</a></li>
+            <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span><a href="http://icon-awards.co.uk" target="_blank">icon-awards.co.uk</a></li>
+            <li><span class="fa-li"><i class="fas fa-angle-double-right"></i></span><a href="http://keystonepreservation.co.uk" target="_blank">keystonepreservation.co.uk</a></li>
           </ul>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Employment Details -->
+    <section class="employment">
+      <h2 class="section-title"><span class="section-title__icon">📂</span>Employment</h2>
+      <p class="highlight">Below you can see some details about my most recent employment history and the assosiated experience gained from the workplace, as well as a basic outline of my role and responsibilities.</p>
+      <div class="employment__container">
+        <div class="employment__card">
+          <h3>Renfrewshire Council</h3>
+          <p>Sole front-end developer for the Digital First team with the remit to digitise services for internal and external audiences.</p>
+          <p>Editing, updating and expanding council SaaS systems as well as proposing, planing and implementing modern updates to improve services.</p>
+          <span>Jan 2020 - current</span>
+        </div>
+        <div class="employment__card">
+          <h3 class="employment__card__title">Equator</h3>
+          <p>Interface developer - working with a wide variety of clients and project sizes. Working in a busy agile environment with other departments (design, client services, insights).</p>
+          <p>developing bespoke front-end solutions for Umbraco, WordPress and Drupal as well as updating existing client sites.</p>
+          <span>May 2018 - Dec 2019</span>
+        </div>
+        <div class="employment__card">
+          <h3>fatBuzz</h3>
+          <p>Web developer - Management and creation of hosting packages, databases, domain names, and mailboxes.</p>
+          <p>As well as providing support, training, and basic SEO/Google Analytics foundations during development of custom WordPress sites.</p>
+          <span>Aug 2017 - May 2018</span>
+        </div>
+        <div class="employment__card">
+          <h3>fatBuzz</h3>
+          <p>Junior web developer - working with a wide variety of clients and project sizes.<p>
+          <p>Developing custom WordPress sites from the ground up using the Sage starter theme based on in-house custom designs and updating or managing existing client sites.</p>
+          <span>Feb 2016 - Aug 2017</span>
+        </div>
+      </div>
+      <p>Beyond the most recent positions listed above which focus on my shift to full time web development, I also have over 7 years experience as a graphic designer and print operator working in a number of studios.</p>
+      <p>Each company has its own unique characteristics which let me apply my existing knowledge in many ways but also work with and around team members where I could learn new skills and improve existing ones.</p>
+    </section>
+
+    <!-- Skill Sets -->
+    <section class="skills">
+      <h2 class="section-title"><span class="section-title__icon">👨‍💻</span>Skill Sets</h2>
+      <p class="highlight">Comfortable on Mac or PC environments I have many adaptible and cross compatible skills between my past experience as a designer and my current as a developer that I use day-to-day. All of these are augmented with my desire to improve on existing skills but also learn and develop new ones.</p>
+      <p>I'm fluent with HTML5 and CSS3 - employing many modern work styles including semantic mark-up, Sass, BEM formatting and Git. I continue to build and improve on JavaScript, PHP, MySQL databases, front-end build tools (Gulp, Webpack) and have experience with popular CMS systems such as WordPress, Drupal and some Umbraco.</p>
+      <p>Day-to-day I also make use of many industry standard software for both production - such as Adobe CC (Illustrator, Photoshop, XD) and productivity/collaboration - such as Microsoft Teams, Atlassian (Jira, Confluence, BitBucket).</p>
+      <div class="skills__container">
+        <!-- Toolsets -->
+        <ul class="skills__icons">
+          <li class="skills__icons__icon"><img src="assets/svg/git.svg" alt="Git Logo"></li>
+          <li class="skills__icons__icon"><img src="assets/svg/atlassian-logo.svg" alt="Atlassian Logo"></li>
+          <li class="skills__icons__icon"><img src="assets/svg/microsoft-teams.svg" alt="Microsoft Teams Logo"></li>
+          <li class="skills__icons__icon"><img src="assets/svg/html5.svg" alt="HTML5 Logo"></li>
+          <li class="skills__icons__icon"><img src="assets/svg/css3.svg" alt="CSS3 Logo"></li>
+          <li class="skills__icons__icon"><img src="assets/svg/php-1.svg" alt="PHP Logo"></li>
+          <li class="skills__icons__icon"><img src="assets/svg/sass-1.svg" alt="Sass Logo"></li>
+          <li class="skills__icons__icon"><img src="assets/svg/javascript.svg" alt="JavaScript Logo"></li>
+          <li class="skills__icons__icon"><img src="assets/svg/photoshop-cc.svg" alt="Photoshop Logo"></li>
+          <li class="skills__icons__icon"><img src="assets/svg/adobe-xd.svg" alt="XD Logo"></li>
+          <li class="skills__icons__icon"><img src="assets/svg/indesign-cc.svg" alt="inDesign Logo"></li>
+          <li class="skills__icons__icon"><img src="assets/svg/adobe-illustrator-cc.svg" alt="Illustrator Logo"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Active Learning -->
+    <section class="learning">
+      <h2 class="section-title"><span class="section-title__icon">🎓</span>Active Learning</h2>
+      <p class="highlight">Web development is such a fast pase and changing industry with so many micro-disciplines within the over arching title. One thing may interest you more than another or your path into the industry might be the deciding factor.</p>
+      <p>I most deffinetly coming from a more design direction, tending to focus on the visual side of front-end web development, but also aim to improve my skillsets and level up what I do. So I look at the wider landscape and try to continue learning and improving.</p>
+      <p>Below you can see a list of some current resources that I'm using to keep pushing myself and add to or update the tools I have availible in my front-end toolbox.</p>
+      <div class="learning__container">
+        <ol>
+          <li>
+            <a href="https://www.interaction-design.org/" target="__blank">Interaction Design Foundation</a>
+            <p>An online service exploring many topics of UI and UX.</p>
+          </li>
+          <li>
+            <a href="https://reactforbeginners.com/" target="__blank">React for Beginenrs</a>
+            <p>A very popular framework that is highly desirable in the industry and the next step in pushing my JavaScript understanding and practical use.</p>
+          </li>
+          <li>
+            <a href="https://es6.io/" target="__blank">ES6 for Everyone</a>
+            <p>Continuing to improve my core understanding of JavaScript with the most up-to-date syntax and format preferences.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Design History -->
+    <section class="design">
+      <h2 class="section-title"><span class="section-title__icon">🎨</span>Design</h2>
+      <p class="highlight">Before going back to university to complete a masters in mobile web development, I worked as a graphic designer for over 7 years in a range of print studios where I designed for both digital and litho.</p>
+      <p>Design work covered a wide range of products including but not limited to: stationery, promotional leaflets, branding and logo design, wedding stationery, large format banners and posters, booklets, and tickets/vouchers.</p>
+      <p>In many of my roles I was also responsible for manageing the in-house printing and outsourcing of print runs. Not only did this develop my understanding of a variety of printing standards but it also allowed me to curate relationships with outside companies.</p>
+      <p>I continue to make use of my design experience in all my subsiquent rolls as well as through personal projects. A selection of past and present design work can bee seen in the carousel below.</p>
+      <div class="design__container">
+        <div class="design__carousel">
+          <div class="design__carousel__item">
+            <img src="assets/images/myAccount-xd-prototype--homeAuth.PNG" alt="image of prototype in adobe XD">
+          </div>
+          <div class="design__carousel__item">
+            <img src="assets/images/logo-img.jpg" alt="logo image">
+          </div>
+          <div class="design__carousel__item">
+            <img src="assets/images/Cafe-Padella-MockUp.jpg" alt="cafe menu design mock-up">
+          </div>
+          <div class="design__carousel__item">
+            <img src="assets/images/creating-connections-logo.jpg" alt="logo design for creating connections glasgow university group">
+          </div>
+          <div class="design__carousel__item">
+            <img src="assets/images/pxls-cinema-logo.png" alt="logo design for paisley cinema">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="hobbies">
+      <h2 class="section-title"><span class="section-title__icon">🎮</span>Hobbies</h2>
+      <p>In my spare time I like to work on any side project ideas I have as well as continuine anything I'm currently doing for active learning. When away from the computer though, I'm a Rugby & Motorsport fan and also enjoy climbing, photography, gaming & just being all-round geeky.</p>
+      <div class="hobbies__container">
+        <div class="hobbies__carousel">
+          <div class="hobbies__carousel__item">
+            <img src="assets/images/transport-museum.jpg" alt="image of cycle bike display at glasgow transport museum">
+          </div>
+          <div class="hobbies__carousel__item">
+            <img src="assets/images/bsb-2018.jpg" alt="image of motorbikes racing at knockhill racing circuit">
+          </div>
+          <div class="hobbies__carousel__item">
+            <img src="assets/images/eilean-donan-castle.jpg" alt="landscape image of Eilean Donan Castle">
+          </div>
+          <div class="hobbies__carousel__item">
+            <img src="assets/images/formula-ford.jpg" alt="close up image of formula ford racing at knockhill racing circuit">
+          </div>
+          <div class="hobbies__carousel__item">
+            <img src="assets/images/lamlash-arran.jpg" alt="landscape image of lamlash bay in Isle of Arran">
+          </div>
+          <div class="hobbies__carousel__item">
+            <img src="assets/images/necropolis-glasgow.jpg" alt="close up detail of stonework at Glasgow necropolis">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>All content by <a href="mailto:info@dmcwhinnie.co.uk"><i class="fa fa-user-circle-o"></i>Douglas McWhinnie</a> &copy; <span id="footer-date"></span> | Hosted through <a href="https://pages.github.com/"><i class="fab fa-github"></i> GitHub Pages</a>.</p>
   </footer>
+  <!-- Custom Scripts -->
+  <script src="scripts/flickity.pkgd.min.js"></script>
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>
