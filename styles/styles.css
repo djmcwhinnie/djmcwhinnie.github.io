@@ -92,13 +92,6 @@ header {
     margin-right: 0.5em;
 }
 
-@media only print {
-    .section-title__icon {
-        margin-right: 0;
-        display: none;
-    }
-}
-
 .header__logo {
     height: 80px;
     width: auto;
@@ -149,7 +142,7 @@ section:last-of-type {
     border-bottom: none;
 }
 
-/* ===  Development Styles === */
+/* === ||  Development === */
 .development__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 2fr));
@@ -164,7 +157,7 @@ section:last-of-type {
     justify-content: space-between;
 }
 
-/* === Employment Cards  === */
+/* === || Employment Cards  === */
 .employment__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 2fr));
@@ -202,7 +195,7 @@ section:last-of-type {
     font-size: 1.4rem;
 }
 
-/* === Skill Set Icons  === */
+/* === || Skill Set Icons  === */
 .skills__container {
     width: 90%;
     padding-top: 2em;
@@ -237,12 +230,12 @@ section:last-of-type {
     height: 50px;
 }
 
-/* === Active Learning Styles === */
+/* === || Active Learning === */
 .learning p + a.primary-button {
     margin-bottom: var(--medium);
 }
 
-/* === Carousel Styles  === */
+/* === || Carousel  === */
 .design__container,
 .hobbies__container {
     padding: 3em 0;
@@ -270,7 +263,7 @@ section:last-of-type {
     box-shadow: 0 0 0 5px var(--brand-purple);
 }
 
-/* === Footer Styles === */
+/* === || Footer === */
 footer {
     width: 50vw;
     min-width: 320px;
@@ -310,4 +303,86 @@ footer {
 
 .footer__social-icons__icon a:focus {
     color: var(--brand-purple);
+}
+
+/* === || Print === */
+@page {
+    margin: 1cm;
+}
+
+@media only print {
+    header {
+        width: 90vw;
+    }
+
+    main {
+        grid-template-columns: minmax(320px, 90%);
+    }
+
+    section {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header__social-icons {
+        width: unset;
+    }
+
+    .svg-inline--fa {
+        vertical-align: middle;
+    }
+
+    .section-title__icon {
+        margin-right: 0;
+        display: none;
+    }
+
+    .employment__container {
+        display: block;
+        padding: 0;
+    }
+
+    .employment__card:nth-child(3),
+    .employment__card:nth-child(4) {
+        display: none;
+    }
+
+    .employment__card {
+        all: initial;
+        display: inline-block;
+    }
+
+    .employment__card:first-of-type {
+        margin-bottom: 1em;
+    }
+
+    .skills__container {
+        display: none;
+    }
+
+    .learning,
+    .design,
+    .hobbies {
+        display: none;
+    }
+
+    a:after {
+        content: "(" attr(href) ")";
+        font-size: 14px;
+        margin-left: 0.5em;
+    }
+
+    .development__container__developed a:after,
+    .development__container__edited a:after {
+        content: "(" attr(href) ")";
+        display: block;
+        margin: 0;
+    }
+}
+
+@media screen {
+    .design__container--print,
+    .hobbies__container--print {
+        display: none;
+    }
 }
